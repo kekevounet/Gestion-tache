@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.input
+{
+    border-bottom: double;
+    background-color: transparent;
+    outline: none;
+}
+.input:focus
+{
+    border-color: rgb(141, 141, 141);
+}
