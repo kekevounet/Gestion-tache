@@ -13,7 +13,7 @@ export default function AjoutTache () {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/tache", {
+      await axios.post("https://gestion-tache.onrender.com/tache", {
         nom: nom,
         description: description
       });

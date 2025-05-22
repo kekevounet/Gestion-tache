@@ -10,7 +10,7 @@ export default function Index() {
   const animate = {opacity:1,scale:1}
   
   useEffect(() => {
-    axios.get("http://localhost:5000/tache")
+    axios.get("https://gestion-tache.onrender.com/tache")
       .then(res => setTaches(res.data))
       .catch(err => console.error("Erreur lors du chargement des tâches", err));
   }, []);

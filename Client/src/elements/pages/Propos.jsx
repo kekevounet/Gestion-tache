@@ -48,9 +48,9 @@ function Propos()
                         <div className="p-6 overflow-hidden rounded-full w-80 h-80"><motion.img className='object-cover' src={Kevin} alt="Kevin" drag dragConstraints={{top:0,letf:0,bottom:0,right:0}}/></div>
                         <div className="p-4 text-2xl font-semibold">MAMINIRINA Niavo Kevin</div>
                         <div className="flex ">
-                            <a href="https://niavo-kevin.netlify.app" className="text-white cursor-pointer"><div className="px-3"><i className="text-4xl fab fa-whatsapp"></i></div></a>
+                            <a href="https://wa.me/261389423351?text=Bonjour%20!%20Je%20veux%20en%20savoir%20%plus%20!%20" className="text-white cursor-pointer"><div className="px-3"><i className="text-4xl fab fa-whatsapp"></i></div></a>
                             <a href="https://niavo-kevin.netlify.app" className="text-white cursor-pointer"><div className="px-3"><i className="text-4xl fas fa-globe"></i></div></a>
-                            <a href="https://niavo-kevin.netlify.app" className="text-white cursor-pointer"><div className="px-3"><i className="text-4xl fab fa-linkedin-in"></i></div></a>
+                            <a href="mailto:niavo.kevin9@gmail.com?subject=Question&body=Je%20veux%20en%20savoir%20plus%20!%20" className="text-white cursor-pointer"><div className="px-3"><i className="text-4xl fas fa-envelope"></i></div></a>
                         </div>
                     </div>}
                 </motion.div>

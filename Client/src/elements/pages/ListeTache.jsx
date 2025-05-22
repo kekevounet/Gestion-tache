@@ -11,7 +11,7 @@ export default function ListeTache() {
 
   const AffichageTache = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/tache');
+      const res = await axios.get('https://gestion-tache.onrender.com/tache');
       setTaches(res.data);
     } catch (error) {
       console.error(error);
@@ -20,7 +20,7 @@ export default function ListeTache() {
 
   const ToggleStatus = async (id, currentStatus) => {
     try {
-      await axios.put(`http://localhost:5000/tache/status/${id}`, {
+      await axios.put(`https://gestion-tache.onrender.com/tache/status/${id}`, {
         status: currentStatus === 1 ? 0 : 1,
       });
       AffichageTache()
@@ -146,8 +146,8 @@ export default function ListeTache() {
     </div>
     <div className="toast-header">
       <div>
-        <li className='list-none'><i className="p-2  fas fa-right-left"></i>Vous pouvez basculer le statut d'un tâche.</li>
-        <li className='list-none'><i className="p-2  fas fa-arrow-down-short-wide"></i>Vous pouvez filtrez les tâches par nom, date ou bien par statut.</li>
+        <li className='list-none'><i className="p-2 fas fa-right-left"></i>Vous pouvez basculer le statut d'un tâche.</li>
+        <li className='list-none'><i className="p-2 fas fa-arrow-down-short-wide"></i>Vous pouvez filtrez les tâches par nom, date ou bien par statut.</li>
       </div>
     </div>
   </div>

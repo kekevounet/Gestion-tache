@@ -7,25 +7,25 @@ export default function TacheNonFini() {
     
     const AffichageTache = async () =>
     {
-        const res = await axios.get('http://localhost:5000/tache');
+        const res = await axios.get('https://gestion-tache.onrender.com/tache');
         setTaches(res.data);
     }
 
     const SuppressionTache = async (id) =>
     {
-        await axios.delete(`http://localhost:5000/tache/${id}`);
+        await axios.delete(`https://gestion-tache.onrender.com/tache/${id}`);
         setTaches(Taches.filter(tache => tache.id !== id));
     }
 
     const AffichageTacheModif = async (id) =>
     {
-        const res = await axios.get(`http://localhost:5000/tache/modifier/${id}`);
+        const res = await axios.get(`https://gestion-tache.onrender.com/tache/modifier/${id}`);
         setSelectTaches(res.data[0])
     }
 
     const ModifierTache = async (e) => {
       e.preventDefault();
-      await axios.put(`http://localhost:5000/tache/${SelectTaches.id}`, {
+      await axios.put(`https://gestion-tache.onrender.com/tache/${SelectTaches.id}`, {
           nom: SelectTaches.nom,
           description: SelectTaches.description
       });
@@ -152,8 +152,8 @@ export default function TacheNonFini() {
     </div>
     <div className="toast-header">
       <div>
-        <li className='list-none'><i className="p-2  fas fa-pen-to-square"></i>Vous pouvez modifier les tâches en cours.</li>
-        <li className='list-none'><i className="p-2  fas fa-trash-can"></i>Vous pouvez modifier les tâches.</li>
+        <li className='list-none'><i className="p-2 fas fa-pen-to-square"></i>Vous pouvez modifier les tâches en cours.</li>
+        <li className='list-none'><i className="p-2 fas fa-trash-can"></i>Vous pouvez modifier les tâches.</li>
       </div>
     </div>
   </div>

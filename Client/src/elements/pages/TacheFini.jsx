@@ -8,12 +8,12 @@ export default function TacheFini() {
 
   const AffichageTaches = async () =>
   {
-    const res = await axios.get('http://localhost:5000/tache');
+    const res = await axios.get('https://gestion-tache.onrender.com/tache');
     setTaches(res.data);
   }
   const SuppressionTache = async (id) =>
   {
-    await axios.delete(`http://localhost:5000/tache/${id}`);
+    await axios.delete(`https://gestion-tache.onrender.com/tache/${id}`);
     setTaches(Taches.filter(tache => tache.id !== id ));
   }
 
@@ -98,7 +98,7 @@ export default function TacheFini() {
     </div>
     <div className="toast-header">
       <div>
-        <li className='list-none'><i className="p-2  fas fa-trash-can"></i>Vous pouvez supprimer les tâches terminées.</li>
+        <li className='list-none'><i className="p-2 fas fa-trash-can"></i>Vous pouvez supprimer les tâches terminées.</li>
       </div>
     </div>
   </div>
